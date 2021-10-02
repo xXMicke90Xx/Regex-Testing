@@ -9,19 +9,7 @@ namespace Regex_Testing
        public static void Main(string[] args)
         {
 
-            string test = @" abc*** def
-                            1234567890
-                            abcdefghijklmnopqrstuvwxyzåäö
-                            
-                            Micke.N90@hotmail.com
-                            micke.n90@hotmail.com
-                            micke.n90@hotMail.nEt
-                            
-                            Mr Micke
-                            Mrs Bella   
-
-                            ´Mr. Micke Nilsson";
-
+            string test = "Hello My Name Is Mike"; 
             string pattern;
             
             ConsoleKeyInfo cki;
@@ -34,6 +22,9 @@ namespace Regex_Testing
                 pattern = Console.ReadLine();
                 testdel = new Regex(pattern);
                 Update(testdel,test );
+                Group(testdel, test);
+                Console.WriteLine("----------------------");
+                
                 Console.WriteLine("Tryck på en knapp. . . ");
                 Console.ReadLine();
                 pattern = "";
@@ -43,14 +34,21 @@ namespace Regex_Testing
 
 
 
-                
+              
 
             }
             Console.ReadLine();
 
         }
 
+        static void Group(Regex test, string sträng)
+        {
+            Match match = test.Match(sträng);
+            Console.WriteLine("Match?: " + match.Groups[1].Value);
+            Console.WriteLine();
+            Console.ReadLine();
 
+        }
         static void TestText(string test)
         {
             
