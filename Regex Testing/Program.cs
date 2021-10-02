@@ -9,13 +9,18 @@ namespace Regex_Testing
        public static void Main(string[] args)
         {
 
-            string test = " Polisen söker efter en nioårig pojke som försvunnit från Kollegiegatan i Malmö vid 08.15-tiden idag." +
-               "Pojken lämnades vid grundskolan på adressen på Kollegiegatan av sin vårdnadshavare, men dök aldrig upp i skolan." +
-               " Enligt våra uppgifter har han lämnats vid skolan men inga klasskamrater eller personal har sett honom, säger Evelina Olsson, presstalesperson vid polisregion Syd." +
-               "I nuläget finns det ingen misstanke om att pojken utsatts för något brott, men med hänsyn till hans ålder är det önskvärt att han anträffas snarast, uppger polisen. " +
-               "Vi arbetar med att kontrollera en rad olika platser som han kan befinna sig på.Rytteriet, vanliga patruller och helikopter arbetar med sökandet, säger Evelina Olsson." +
-               "Han ska vara klädd i orangea byxor och en svart munkjacka med vit text. Eventuellt har pojken också en cykel med sig." +
-               "Ser du pojken eller har du nyss sett honom bör du kontakta polisen via telefonnummer 112.Tips, observationer eller andra upplysningar mottages tacksamt via telefonnummer 114 14.";
+            string test = @" abc*** def
+                            1234567890
+                            abcdefghijklmnopqrstuvwxyzåäö
+                            
+                            Micke.N90@hotmail.com
+                            micke.n90@hotmail.com
+                            micke.n90@hotMail.nEt
+                            
+                            Mr Micke
+                            Mrs Bella   
+
+                            ´Mr. Micke Nilsson";
 
             string pattern;
             
